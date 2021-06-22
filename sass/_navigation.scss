@@ -1,0 +1,141 @@
+// navigation /////
+
+.navigation {
+ float: right; 
+ margin: 3rem 5rem 0 3rem;
+  // text-align: center;
+  position: relative;
+
+ 
+  @media only screen and (max-width: 900px) { 
+    margin: 3rem 1rem 0 2rem;
+  }
+  @media only screen and (max-width: 37.5em) { 
+    margin: 3rem 1rem 0 0;
+  }
+  
+
+ &__list{
+  list-style: none;
+  display: flex;
+  top: 5%;
+  right:-50%;
+ 
+  
+  animation: moveinbottom .6s ease-out .85s;
+    animation-fill-mode: backwards;
+
+    @media only screen and (max-width: 430px) { 
+      flex-direction:column;
+      margin-top: -2rem;
+     margin-bottom: 4rem;
+    }
+ }
+ &__item{
+  font-size: 1.3rem;
+ 
+  @media only screen and (max-width: 900px) { 
+    font-size: 1.2rem;
+  }
+   @media only screen and (max-width: 37.5em) { 
+    font-size: 1.1rem;  
+  }
+   @media only screen and (max-width: 500px) { 
+    font-size: 1.1rem;  
+  }
+  
+
+  & > *:hover {
+  color: var(--color-maroon);
+   background-color:var(--color-grey-light-2);
+   transition: all .2s; 
+ }
+ & > *:active,
+ & > *:focus {
+  background-color:var(--color-primary);
+  color: var(--color-white);
+  transition: all .2s;
+ }
+ }
+ &__link{
+  padding:.6rem 1.1rem;
+  border-radius: 10rem;
+  color: var(--color-white);
+  text-decoration: none;
+
+  @media only screen and (max-width: 37.5em) { 
+    padding:.5rem .6rem;
+  }
+  @media only screen and (max-width: 900px) { 
+    padding:.7rem .9rem;
+    
+  }
+   @media only screen and (max-width: 500px) { 
+    padding:.7rem .6rem; 
+  }
+  @media only screen and (max-width: 430px) { 
+    padding: 1rem;
+  }
+ }
+ 
+}
+.navigation-1{
+  
+  &__list{
+    list-style: none;
+    display: flex;
+    color: var(--color-grey-light-2);
+  
+   }
+   &__item{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--color-white);
+
+   
+    @media only screen and (max-width: 900px) { 
+      font-size: 1rem;
+     
+    }
+     @media only screen and (max-width: 37.5em) { 
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    @media only screen and (max-width: 500px) { 
+      font-size: .8rem;
+     
+    }
+    
+    
+  
+    & > *:hover {
+    color: var(--color-maroon);
+     background-color:var(--color-grey-light-2);
+     transition: all .2s; 
+   }
+   & > *:active,
+   & > *:focus {
+    background-color:var(--color-primary);
+    color: var(-color-grey-light-2);
+    transition: all .2s;
+   }
+   }
+   &__link{
+    padding:.5rem .9rem;
+    border-radius: 10rem;
+    color: var(--color-grey-dark-4);
+    text-decoration: none;
+
+    &:hover,&:focus, &:active {
+      animation: all .2s;
+      color: var(--color-maroon);
+     }
+
+    @media only screen and (max-width: 37.5em) { 
+      padding:.2rem .4rem;
+    }
+    @media only screen and (max-width: 37.5em) { 
+      padding:.3rem .4rem;
+    }
+   }
+}

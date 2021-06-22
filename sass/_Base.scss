@@ -1,0 +1,100 @@
+:root{
+    --color-primary:#708090;
+    --color-primary-2:#a5adb3;
+
+
+    --color-white :#fff;
+    --color-grey-dark:#777;
+    
+    
+    --color-grey-dark-1:#777;
+    --color-grey-dark-2:#999;
+    --color-grey-dark-3:#333;
+    --color-grey-dark-4:rgba(231, 231, 231, 0.911);
+
+    
+    --color-grey-light-1:#f7f7f7;
+    --color-grey-light-2:rgb(224, 224, 224);
+
+    --color-red:#ff0000;
+    --color-maroon:#800000;
+}
+$color-primary:#708090;
+$color-primary-light:#828b94;
+$color-red:#ff0000;
+$color-maroon:#800000;
+$default-font-size:1.6rem;
+$color-black :#000;
+
+$default-font-size:1.3rem;
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    //this defines what 1rem is
+    font-size: 62.5%;   //1rem = 10px; 10px/16px = 62.5%
+   
+    @media only screen and (max-width: 900px) { 
+        font-size: 56.25%;     //1rem= 9px; 9/16;
+            
+      }
+    /* @include respond(tab-land) { //width < 900
+        font-size: 56.25%;     //1rem= 9px; 9/16
+    }
+
+    @include respond(tab-port) { //width < 600
+        font-size:50%;      //1rem= 8px; 8/16
+    }
+   
+    @include respond(big-desktop) { 
+        font-size: 75%;     //1rem= 12px; 12/16
+    }*/
+    @media only screen and (max-width: 1200px) { 
+        font-size:50%;      //1rem= 8px; 8/16
+            
+      }
+      @media only screen and (max-width: 1800px) { 
+        font-size: 75%;     //1rem= 12px; 12/16;
+            
+      }
+}
+body{
+    box-sizing: border-box;
+    font-family:'open sans',sans-serif;
+    padding: 3rem;
+    color: var(--color-grey-dark-3);
+
+    @media only screen and (max-width: 900px) { 
+      padding: 0;    
+    }
+    @media only screen and (max-width: 600px) { 
+        padding: 0;    
+      }
+}
+.heading-secondary {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;
+    // display: inline-block;
+    color: var(--color-red);
+
+    @media only screen and (max-width: 600px) { 
+    font-weight: 600;
+    font-size: 1.5rem;
+      }
+      @media only screen and (max-width: 900px) { 
+        font-weight: 600;
+        font-size: 1.7rem;
+          }
+
+    
+    
+}
+
+/// colo
+
